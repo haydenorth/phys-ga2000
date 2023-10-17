@@ -26,9 +26,9 @@ plt.legend()
 plt.savefig('ps5_p1_a')
 
 # part e
-# integrand of gamma integral with eq (5.69) change of variables, c = 4*(a-1)
+# integrand of gamma integral with eq (5.69) change of variables, c = (a-1)
 def integrand(x, a):
-    c = 4*(a-1)
+    c = (a-1)
     return (c/(1-x)**2)*np.exp((a-1)*np.log((c*x)/(1-x))-((c*x)/(1-x)))
 
 # function for calculating the gamma function for a given a
